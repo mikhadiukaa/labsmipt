@@ -1,2 +1,2 @@
 # labsmipt
-for my stupid cjde
+for my stupid code
