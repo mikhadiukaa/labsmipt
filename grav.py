@@ -14,7 +14,7 @@ vy = np.zeros(dot_amount);
 vy[0] = vy0;
 g=9.8
 for(i) in range (dot_amount -1):
-    vy[i+1] = vy[i] - g*dt-g*vy[i]
+    vy[i+1] = vy[i] - g*dt-g*vy
     x[i+1] = x[i] + vx0*dt
     y[i+1] = vy[i]*dt + y[i]
     if(y[i+1] <= 0):
