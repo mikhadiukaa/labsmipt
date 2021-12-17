@@ -26,11 +26,11 @@ mustache_calor = (153, 102, 0)
 rect(screen, brown_wall, (0, 0, 450, 300))
 rect(screen, brown_floor, (0, 300, 450, 350))
 # окно
-n1=(255,27,83,70)
-n2=(352,27,83,70)
-n3=(255,115,83,166)
-n4=(352, 115, 83, 166)#параметры стекол
-size= [n1,n2,n3,n4] #список из параметров стекол
+n1 = (255, 27, 83, 70)
+n2 = (352, 27, 83, 70)
+n3 =(255, 115, 83, 166)
+n4 =(352, 115, 83, 166)#параметры стекол
+size = [n1, n2, n3, n4] #список из параметров стекол
 rect(screen, window_joint_color, (245, 20, 200, 270))  # рама
 def window_glass(size):
   rect(screen, window_glass_color, size)
@@ -38,16 +38,16 @@ for size in size:
   window_glass(size) 
 # кот
 # тело
-n1=33, 376, 36, 70
-n2=60, 320, 290, 145
-n3=66, 428, 70, 38
-n4=342, 431, 30, 62#n это параметры залитой части элипсов тела и лап
-b1=33, 376, 36, 70
-b2=60, 320, 290, 145 
-b3=66, 428, 70, 38 
-b4=342, 431, 30, 62#b это параметры обводки элипсов тела и лап
-common_body=[n1,n2,n3,n4]
-obvodka=[b1,b2,b3,b3]
+n1 = 33, 376, 36, 70
+n2 = 60, 320, 290, 145
+n3 = 66, 428, 70, 38
+n4 = 342, 431, 30, 62#n это параметры залитой части элипсов тела и лап
+b1 = 33, 376, 36, 70
+b2 = 60, 320, 290, 145
+b3 = 66, 428, 70, 38
+b4 = 342, 431, 30, 62#b это параметры обводки элипсов тела и лап
+common_body=[n1, n2, n3, n4]
+obvodka=[b1, b2, b3, b3]
 def paws_and_body(common_body):
   ellipse(screen, cat_body_color, common_body)#рисует залитую часть элисов тла и лап
 def paws_and_bodyo(obvodka):# рисует обводку элипсов тела
@@ -89,19 +89,19 @@ m5=black, [[98, 333], [119, 359], [119, 309]], 1
 m6=cat_ear_color, [[103, 333], [115, 349], [115, 320]]
 m7=cat_ear_color, [[66, 395], [76, 395], [71, 402]]
 mord=[m1,m2,m3,m4,m5,m6,m7]
-def pol_mord(mord):
-  polygon(screen, mord)
-#polygon(screen, cat_body_color, [[45, 330], [22, 354], [22, 305]])  # левое ухо
-#polygon(screen, black, [[45, 330], [22, 354], [22, 305]], 1)
-#polygon(screen, cat_ear_color, [[40, 330], [27, 345], [26, 315]])
+#def pol_mord(mord):
+  #polygon(screen, mord)
+polygon(screen, cat_body_color, [[45, 330], [22, 354], [22, 305]])  # левое ухо
+polygon(screen, black, [[45, 330], [22, 354], [22, 305]], 1)
+polygon(screen, cat_ear_color, [[40, 330], [27, 345], [26, 315]])
 
-#polygon(screen, cat_body_color, [[98, 333], [119, 359], [119, 309]])  # правое ухо
-#polygon(screen, black, [[98, 333], [119, 359], [119, 309]], 1)
-#polygon(screen, cat_ear_color, [[103, 333], [115, 349], [115, 320]])
+polygon(screen, cat_body_color, [[98, 333], [119, 359], [119, 309]])  # правое ухо
+polygon(screen, black, [[98, 333], [119, 359], [119, 309]], 1)
+polygon(screen, cat_ear_color, [[103, 333], [115, 349], [115, 320]])
 
-#polygon(screen, cat_ear_color, [[66, 395], [76, 395], [71, 402]]) # нос
-for mord in mord:
-  pol_mord(mord)
+polygon(screen, cat_ear_color, [[66, 395], [76, 395], [71, 402]]) # нос
+#for mord in mord:
+  #pol_mord(mord)
 
 
 aaline(screen, mustache_calor, [80,403], [130,390])
