@@ -28,7 +28,7 @@ class Balls(pygame.sprite.Sprite):
             self.image = pygame.image.load('ball1.png')
             self.coefficient_of_lack = 2
         else:
-            self.image = pygame.image.load('ball2.jpg')
+            self.image = pygame.image.load('ball2.png')
             self.coefficient_of_lack = 1
         # задает начальные координаты шаров и их скорости трансформирует картинки
         self.rect = self.image.get_rect()
